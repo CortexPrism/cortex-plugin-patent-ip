@@ -1,0 +1,34 @@
+{
+  "name": "cortex-plugin-patent-ip",
+  "version": "1.0.0",
+  "description": "Patent & IP Portfolio Manager — USPTO/WIPO/EPO/Google Patents search, prior art, competitor portfolios, application drafts",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-patent-ip",
+  "homepage": "https://cortexprism.io/marketplace/plugins/patent-ip",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    {
+      "name": "patent_search",
+      "description": "Search patents by keyword or assignee",
+      "params": []
+    },
+    { "name": "patent_prior_art", "description": "Conduct prior art search", "params": [] },
+    {
+      "name": "patent_analyze_portfolio",
+      "description": "Analyze competitor patent portfolio",
+      "params": []
+    },
+    {
+      "name": "patent_draft_application",
+      "description": "Draft patent application from invention disclosure",
+      "params": []
+    }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
